@@ -37,14 +37,14 @@ m.reverse()
 m=m[:10]
 wt=[]
 val=[]
-a=time.time()
+initial=time.time()
 for j in m:
     wt.append(j[1])
     val.append(j[-1]) 
 ans=knapsack(duration, wt, val, len(m),m)
-b=time.time()
+last=time.time()
 print("your list : "+f'{ans}')        
-print("time taken : "+f'{b-a}')
+print("time taken : "+f'{last-initial}')
 
 
 
